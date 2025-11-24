@@ -1,18 +1,19 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id "androidx.navigation.safeargs.kotlin"
 }
 
 android {
     namespace 'com.spoons.popparazzi'
-    compileSdk 36
+    compileSdk = 36
 
     defaultConfig {
         applicationId "com.spoons.popparazzi"
         minSdk 24
         targetSdk 36
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -30,14 +31,33 @@ android {
     kotlinOptions {
         jvmTarget = '11'
     }
+
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
-
     implementation libs.androidx.core.ktx
     implementation libs.androidx.appcompat
     implementation libs.material
     testImplementation libs.junit
     androidTestImplementation libs.androidx.junit
     androidTestImplementation libs.androidx.espresso.core
+
+    // navigation
+    implementation libs.androidx.navigation.fragment
+    implementation libs.androidx.navigation.ui
+
+    // retrofit
+    implementation libs.retrofit
+    implementation libs.converter.gson
+
+    // okHttp
+    implementation libs.okhttp
+    implementation libs.logging.interceptor
+
+    // glide
+    implementation libs.glide
+
 }
