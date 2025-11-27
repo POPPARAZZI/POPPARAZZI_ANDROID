@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">popparazzi</string>
+
+
+    <!-- onboarding -->
+    <string name="onboarding_title_1">가고 싶은 팝업스토어를 찾아봐요</string>
+    <string name="onboarding_title_2">취향에 맞는 팝업을 추천받아요</string>
+    <string name="onboarding_title_3">팝업스토어 함께 방문해요!</string>
+    <string name="onboarding_info_1">필터링과 지도로 가고싶은 팝업 스토어를\n편하게 검색해볼 수 있어요</string>
+    <string name="onboarding_info_2">관심사에 딱 맞는 팝업스토어를 AI 기반으로\n버비가 추천해줄게요</string>
+    <string name="onboarding_info_3">혼자 방문하기 어려운 팝업 스토어 있으셨나요?\n팝파라치에서 함께해요!</string>
+
 </resources>

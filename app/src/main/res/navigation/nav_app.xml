@@ -8,4 +8,28 @@
         android:id="@+id/splashFragment"
         android:name="com.spoons.popparazzi.feature.splash.SplashFragment"
         android:label="SplashFragment" />
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.spoons.popparazzi.feature.onboarding.OnboardingFragment"
+        android:label="OnBoardingFragment" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.spoons.popparazzi.feature.login.LoginFragment"
+        android:label="LoginFragment" />
+
+    <action
+        app:launchSingleTop="true"
+        app:popUpToInclusive="true"
+        app:popUpTo="@id/nav_app"
+        android:id="@+id/to_onboarding"
+        app:destination="@id/onboardingFragment" />
+
+    <action
+        app:launchSingleTop="true"
+        app:popUpToInclusive="true"
+        app:popUpTo="@id/nav_app"
+        android:id="@+id/to_login"
+        app:destination="@id/loginFragment" />
 </navigation>

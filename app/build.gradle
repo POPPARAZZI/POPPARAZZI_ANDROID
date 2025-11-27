@@ -60,4 +60,8 @@ dependencies {
     // glide
     implementation libs.glide
 
+    // onboarding
+    implementation libs.dotsindicator
+
+
 }

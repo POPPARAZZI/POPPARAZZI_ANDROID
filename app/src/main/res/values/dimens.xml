@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- onboarding -->
+    <dimen name="onboarding_img_max_size">320dp</dimen>
+    <dimen name="onboarding_img_margin">28dp</dimen>
+    <dimen name="onboarding_dot_size">8dp</dimen>
+    <dimen name="onboarding_dot_margin">2dp</dimen>
+
+</resources>

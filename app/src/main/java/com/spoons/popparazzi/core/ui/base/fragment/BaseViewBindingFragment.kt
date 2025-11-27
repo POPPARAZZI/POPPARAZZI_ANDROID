@@ -1,4 +1,4 @@
-package com.spoons.popparazzi.core.ui.base
+package com.spoons.popparazzi.core.ui.base.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
