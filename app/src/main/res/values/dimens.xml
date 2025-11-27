@@ -7,4 +7,6 @@
     <dimen name="onboarding_dot_size">8dp</dimen>
     <dimen name="onboarding_dot_margin">2dp</dimen>
 
+    <!-- bottom tab -->
+    <dimen name="bottom_tab_height">63dp</dimen>
 </resources>

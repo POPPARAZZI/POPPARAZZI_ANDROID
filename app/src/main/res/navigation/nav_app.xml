@@ -19,6 +19,11 @@
         android:name="com.spoons.popparazzi.feature.login.LoginFragment"
         android:label="LoginFragment" />
 
+    <fragment
+        android:id="@+id/mainContainerFragment"
+        android:name="com.spoons.popparazzi.feature.main.MainContainerFragment"
+        android:label="MainContainerFragment" />
+
     <action
         app:launchSingleTop="true"
         app:popUpToInclusive="true"
@@ -32,4 +37,12 @@
         app:popUpTo="@id/nav_app"
         android:id="@+id/to_login"
         app:destination="@id/loginFragment" />
+
+    <action
+        app:launchSingleTop="true"
+        app:popUpToInclusive="true"
+        app:popUpTo="@id/nav_app"
+        android:id="@+id/to_main_container"
+        app:destination="@id/mainContainerFragment" />
+
 </navigation>
