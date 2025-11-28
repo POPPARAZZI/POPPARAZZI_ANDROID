@@ -14,20 +14,12 @@ class BottomTabLayout @JvmOverloads constructor(
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0,
     defStyleRes: Int = 0
-): ConstraintLayout(context, attrs, defStyleAttr, defStyleRes), View.OnClickListener {
+): ConstraintLayout(context, attrs, defStyleAttr, defStyleRes) {
+    private val llList = mutableListOf<LinearLayout>()
+    private val ivList = mutableListOf<ImageView>()
+    private val tvList = mutableListOf<TextView>()
 
-    interface BottomTabListener {
-        fun click(type: TabType)
-    }
-    var bottomTabListener: BottomTabListener? = null
-    fun addBottomTabListener(listener: BottomTabListener) {
-        this.bottomTabListener = listener
-    }
-
-    private val llList = mutableListOf<LinearLayout?>()
-    private val ivList = mutableListOf<ImageView?>()
-    private val tvList = mutableListOf<TextView?>()
-
+    var onClickBottomTab: (TabType) -> Unit = {}
 
     private fun initLayout() {
         inflate(context, R.layout.layout_bottom_tab, this)
@@ -55,13 +47,13 @@ class BottomTabLayout @JvmOverloads constructor(
 
     private fun regListener() {
         llList.forEach { ll ->
-            ll?.setOnClickListener(this)
+            ll.setOnClickListener { onClickTab(ll) }
         }
     }
 
-    override fun onClick(v: View?) {
-        bottomTabListener?.click(toType(v?.id))
-        llList.forEachIndexed { idx, ll ->
+    private fun onClickTab(v: View) {
+        onClickBottomTab(toType(v.id))
+        llList.forEachIndexed { idx,  ll ->
             // todo
         }
     }

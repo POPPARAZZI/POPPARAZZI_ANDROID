@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- default -->
+    <dimen name="spacing_default">20dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_half">10dp</dimen>
+
     <!-- onboarding -->
     <dimen name="onboarding_img_max_size">320dp</dimen>
-    <dimen name="onboarding_img_margin">28dp</dimen>
+    <dimen name="onboarding_img_spacing">28dp</dimen>
     <dimen name="onboarding_dot_size">8dp</dimen>
-    <dimen name="onboarding_dot_margin">2dp</dimen>
+    <dimen name="onboarding_dot_spacing">2dp</dimen>
 
     <!-- bottom tab -->
     <dimen name="bottom_tab_height">63dp</dimen>
+
+    <!-- top toolbar -->
+    <dimen name="top_toolbar_height">40dp</dimen>
+
 </resources>

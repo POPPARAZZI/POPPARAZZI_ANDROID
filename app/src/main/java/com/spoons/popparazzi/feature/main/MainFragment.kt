@@ -65,8 +65,8 @@ class MainFragment: BaseViewBindingFragment<FragmentMainBinding>(FragmentMainBin
 
     override fun regListener() {
         super.regListener()
-        binding.tabBottom.addBottomTabListener(object: BottomTabLayout.BottomTabListener {
-            override fun click(type: BottomTabLayout.TabType) = setFragment(type)
-        })
+        binding.tabBottom.onClickBottomTab = { type ->
+            setFragment(type)
+        }
     }
 }

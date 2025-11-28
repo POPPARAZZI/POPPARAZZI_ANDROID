@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TopToolbarLayout">
+        <attr name="toolbar_title" format="reference|string"/>
+        <attr name="toolbar_back" format="reference|boolean"/>
+        <attr name="toolbar_noti" format="reference|boolean"/>
+        <attr name="toolbar_setting" format="reference|boolean"/>
+    </declare-styleable>
+</resources>

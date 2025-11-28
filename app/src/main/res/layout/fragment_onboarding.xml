@@ -18,7 +18,7 @@
         app:dotsColor="@color/color_d9"
         app:selectedDotColor="@color/color_primary"
         app:dotsSize="@dimen/onboarding_dot_size"
-        app:dotsSpacing="@dimen/onboarding_dot_margin"
+        app:dotsSpacing="@dimen/onboarding_dot_spacing"
         app:dotsWidthFactor="2.0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
