@@ -5,11 +5,11 @@ import androidx.fragment.app.viewModels
 import com.spoons.popparazzi.core.ui.base.fragment.BaseViewBindingFragment
 import com.spoons.popparazzi.core.ui.widget.BottomTabLayout
 import com.spoons.popparazzi.databinding.FragmentMainBinding
-import com.spoons.popparazzi.feature.main.chat.ChatFragment
-import com.spoons.popparazzi.feature.main.home.HomeFragment
-import com.spoons.popparazzi.feature.main.meet.MeetFragment
-import com.spoons.popparazzi.feature.main.mypage.MyPageFragment
-import com.spoons.popparazzi.feature.main.search.SearchFragment
+import com.spoons.popparazzi.feature.chat.ChatListFragment
+import com.spoons.popparazzi.feature.home.HomeFragment
+import com.spoons.popparazzi.feature.meet.MeetListFragment
+import com.spoons.popparazzi.feature.mypage.MyPageFragment
+import com.spoons.popparazzi.feature.search.SearchFragment
 
 class MainFragment: BaseViewBindingFragment<FragmentMainBinding>(FragmentMainBinding::inflate) {
     private val viewModel: MainViewModel by viewModels()
@@ -32,8 +32,8 @@ class MainFragment: BaseViewBindingFragment<FragmentMainBinding>(FragmentMainBin
     private fun initFragments() {
         fragmentMap[BottomTabLayout.TabType.HOME] = childFragmentManager.findFragmentByTag(BottomTabLayout.TabType.HOME.tag)?: HomeFragment()
         fragmentMap[BottomTabLayout.TabType.SEARCH] = childFragmentManager.findFragmentByTag(BottomTabLayout.TabType.SEARCH.tag)?: SearchFragment()
-        fragmentMap[BottomTabLayout.TabType.MEET] = childFragmentManager.findFragmentByTag(BottomTabLayout.TabType.MEET.tag)?: MeetFragment()
-        fragmentMap[BottomTabLayout.TabType.CHAT] = childFragmentManager.findFragmentByTag(BottomTabLayout.TabType.CHAT.tag)?: ChatFragment()
+        fragmentMap[BottomTabLayout.TabType.MEET] = childFragmentManager.findFragmentByTag(BottomTabLayout.TabType.MEET.tag)?: MeetListFragment()
+        fragmentMap[BottomTabLayout.TabType.CHAT] = childFragmentManager.findFragmentByTag(BottomTabLayout.TabType.CHAT.tag)?: ChatListFragment()
         fragmentMap[BottomTabLayout.TabType.MY_PAGE] = childFragmentManager.findFragmentByTag(BottomTabLayout.TabType.MY_PAGE.tag)?: MyPageFragment()
     }
 
