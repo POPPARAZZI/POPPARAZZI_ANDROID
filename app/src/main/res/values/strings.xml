@@ -11,14 +11,14 @@
     <string name="onboarding_info_2">관심사에 딱 맞는 팝업스토어를 AI 기반으로\n버비가 추천해줄게요</string>
     <string name="onboarding_info_3">혼자 방문하기 어려운 팝업 스토어 있으셨나요?\n팝파라치에서 함께해요!</string>
 
-    <!-- top toolbar -->
-    <string name="toolbar_search">팝업 검색</string>
-
     <!-- bottom tab -->
     <string name="tab_home">홈</string>
     <string name="tab_search">검색</string>
     <string name="tab_meet">모임</string>
     <string name="tab_chat">채팅</string>
     <string name="tab_my">마이</string>
+
+    <!-- search -->
+    <string name="search_popup">팝업 검색</string>
 
 </resources>
