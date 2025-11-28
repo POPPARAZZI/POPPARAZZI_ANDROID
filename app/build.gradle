@@ -4,6 +4,10 @@ plugins {
     id "androidx.navigation.safeargs.kotlin"
 }
 
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+def naverClientId = properties.getProperty('naver_client_id')
+
 android {
     namespace 'com.spoons.popparazzi'
     compileSdk = 36
@@ -16,6 +20,9 @@ android {
         versionName "1.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [NAVER_CLIENT_ID : naverClientId]
+        buildConfigField "String", "NAVER_CLIENT_ID", "\"${naverClientId}\""
     }
 
     buildTypes {
@@ -34,6 +41,7 @@ android {
 
     buildFeatures {
         viewBinding true
+        buildConfig true
     }
 }
 
@@ -63,5 +71,6 @@ dependencies {
     // onboarding
     implementation libs.dotsindicator
 
-
+    // 네이버 지도 SDK
+    implementation libs.map.sdk
 }
