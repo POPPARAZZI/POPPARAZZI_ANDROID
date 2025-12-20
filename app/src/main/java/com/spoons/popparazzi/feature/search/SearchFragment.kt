@@ -9,7 +9,8 @@ class SearchFragment: BaseViewBindingFragment<FragmentSearchBinding>(FragmentSea
         super.regListener()
 
         binding.clSearch.setOnClickListener {
-            binding.motion.transitionToStart()
+            if(binding.motion.currentState == R.id.motion_hide) binding.motion.setTransition(R.id.t_detail_hide)
+            binding.motion.transitionToState(R.id.motion_detail)
         }
 
         binding.clCategory.setOnClickListener {

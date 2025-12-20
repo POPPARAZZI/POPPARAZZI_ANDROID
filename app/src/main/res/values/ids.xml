@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- search motion -->
+    <item name="motion_normal" type="id"/>
+    <item name="motion_detail" type="id"/>
+    <item name="motion_full" type="id"/>
+    <item name="motion_hide" type="id"/>
+</resources>
