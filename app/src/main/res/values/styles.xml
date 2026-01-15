@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- font family -->
+    <style name="bold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/pretendard_bold</item>
+    </style>
+    <style name="reg" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+    </style>
+    <style name="light" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/pretendard_light</item>
+    </style>
+
+
+    
+    <!-- font size -->
+    <style name="reg.10dp" parent="reg">
+        <item name="android:textSize">10dp</item>
+    </style>
+    
+    <!-- font color -->
+<!--    <style name="reg.10dp."-->
+
+
+</resources>

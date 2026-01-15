@@ -54,7 +54,8 @@ class BottomTabLayout @JvmOverloads constructor(
     private fun onClickTab(v: View) {
         onClickBottomTab(toType(v.id))
         llList.forEachIndexed { idx,  ll ->
-            // todo
+            ivList[idx].isSelected = ll == v
+            tvList[idx].isSelected = ll == v
         }
     }
 
