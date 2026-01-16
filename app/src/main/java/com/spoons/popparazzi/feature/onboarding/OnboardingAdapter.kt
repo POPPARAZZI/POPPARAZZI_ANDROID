@@ -2,7 +2,7 @@ package com.spoons.popparazzi.feature.onboarding
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.spoons.popparazzi.core.extention.glide
+import com.spoons.popparazzi.core.extension.glide
 import com.spoons.popparazzi.core.ui.adapter.adapter.BaseItemAdapter
 import com.spoons.popparazzi.core.ui.adapter.viewholder.BaseViewHolder
 import com.spoons.popparazzi.databinding.ItemOnboardingBinding

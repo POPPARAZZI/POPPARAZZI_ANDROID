@@ -1,4 +1,4 @@
-package com.spoons.popparazzi.core.extention
+package com.spoons.popparazzi.core.extension
 
 import android.widget.ImageView
 import androidx.annotation.DrawableRes
