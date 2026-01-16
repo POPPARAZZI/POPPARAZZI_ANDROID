@@ -73,4 +73,7 @@ dependencies {
 
     // 네이버 지도 SDK
     implementation libs.map.sdk
+    // location
+    implementation libs.play.services.location
+
 }
