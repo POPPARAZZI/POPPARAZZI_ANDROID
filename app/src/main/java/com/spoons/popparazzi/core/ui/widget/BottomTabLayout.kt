@@ -67,6 +67,13 @@ class BottomTabLayout @JvmOverloads constructor(
         else -> TabType.HOME
     }
 
+    fun setTab(type: TabType) {
+        llList.forEachIndexed { idx, _ ->
+            ivList[idx].isSelected = idx == type.idx
+            tvList[idx].isSelected = idx == type.idx
+        }
+    }
+
     init {
         initLayout()
         regListener()

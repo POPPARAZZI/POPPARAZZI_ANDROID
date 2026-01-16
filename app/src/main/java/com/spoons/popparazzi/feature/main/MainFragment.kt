@@ -62,7 +62,7 @@ class MainFragment: BaseViewBindingFragment<FragmentMainBinding>(FragmentMainBin
     }
 
     private fun setTab(type: BottomTabLayout.TabType) {
-        // todo
+        binding.tabBottom.setTab(type)
     }
 
     override fun regListener() {
