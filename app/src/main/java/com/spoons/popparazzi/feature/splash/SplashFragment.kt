@@ -10,7 +10,7 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class SplashFragment: BaseBindFragment<FragmentSplashBinding>(FragmentSplashBinding::inflate) {
-    override val containerColor: Int = R.color.color_primary
+    override val containerColor: Int = R.color.red500_primary
     private val viewModel: SplashViewModel by viewModels()
 
     override fun bindUi() {

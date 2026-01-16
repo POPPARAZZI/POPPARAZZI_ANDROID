@@ -13,7 +13,7 @@ abstract class BaseFragment: Fragment() {
     protected open fun regListener() = Unit
     protected open fun regObserve() = Unit
 
-    open val containerColor: Int = R.color.color_container
+    open val containerColor: Int = R.color.bg1
 
     override fun onResume() {
         super.onResume()

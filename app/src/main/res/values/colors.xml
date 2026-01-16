@@ -1,8 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="color_primary">#FF3700</color>
+    <color name="red900">#C10D00</color>
+    <color name="red800">#CE1500</color>
+    <color name="red700">#DE2000</color>
+    <color name="red600">#ED3000</color>
+    <color name="red500_primary">#FF3700</color>
+    <color name="red400">#FF6034</color>
+    <color name="red300">#FF7E5A</color>
+    <color name="red200">#FFA288</color>
+    <color name="red100">#FFCFC2</color>
+    <color name="red50">#FFEEEA</color>
 
-    <color name="color_container">#FFFFFF</color>
+    <color name="bg1">#FFFFFF</color>
+    <color name="bg2">#F4F4F4</color>
+    <color name="bg3">#ECEBEB</color>
+    <color name="bg4">#99685E5E</color>
+    <color name="bg5">#CC685E5E</color>
+
+    <color name="content_primary">#181616</color>
+    <color name="content_2nd">#6D6C6C</color>
+    <color name="content_3rd">#929292</color>
+    <color name="content_4th">#C9C9C9</color>
+    <color name="content_w">#FFFFFF</color>
     
-    <color name="color_d9">#D9D9D9</color>
+    <color name="neutral1100">#000000</color>
+    <color name="neutral1000">#181616</color>
+    <color name="neutral900">#353333</color>
+    <color name="neutral800">#5E5B5A</color>
+    <color name="neutral700">#6D6C6C</color>
+    <color name="neutral600">#929292</color>
+    <color name="neutral500">#AAAAA9</color>
+    <color name="neutral400">#C9C9C9</color>
+    <color name="neutral300">#DFDFDF</color>
+    <color name="neutral200">#ECEBEB</color>
+    <color name="neutral100">#F4F4F4</color>
+    <color name="neutral50">#F9F8F8</color>
+    <color name="neutral0">#FFFFFF</color>
+
+    <color name="orange">#FFB517</color>
+    <color name="green">#33CC33</color>
+    <color name="coral">#FF8F82</color>
+    <color name="blue">#2CB6E7</color>
+    <color name="red">#F16D4C</color>
+    <color name="pink">#F84DDC</color>
+    <color name="forest">#329832</color>
+    <color name="navy">#094E8B</color>
+    <color name="gray">#676767</color>
+
 </resources>

@@ -67,7 +67,7 @@
         android:name="com.naver.maps.map.MapFragment"/>
 
     <TextView
-        android:background="@color/color_container"
+        android:background="@color/bg1"
         android:id="@+id/cl_bottom_bar"
         android:gravity="center"
         app:layout_constraintStart_toStartOf="@id/view_popup"
@@ -78,7 +78,7 @@
         android:layout_height="44dp"/>
 
     <View
-        android:background="@color/color_container"
+        android:background="@color/bg1"
         app:layout_constraintHeight_percent="0.55"
         android:id="@+id/view_popup"
         app:layout_constraintStart_toStartOf="parent"

@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Popparazzi" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimary">@color/red500_primary</item>
 <!--        <item name="colorPrimaryVariant">@color/</item>-->
 <!--        <item name="colorOnPrimary">@color/</item>-->
 <!--        &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
