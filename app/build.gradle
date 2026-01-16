@@ -6,9 +6,9 @@ plugins {
     id 'com.google.dagger.hilt.android'
 }
 
-//Properties properties = new Properties()
-//properties.load(project.rootProject.file('local.properties').newDataInputStream())
-//def naverClientId = properties.getProperty('naver_client_id')
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+def naverClientId = properties.getProperty('naver_client_id')
 
 android {
     namespace 'com.spoons.popparazzi'
