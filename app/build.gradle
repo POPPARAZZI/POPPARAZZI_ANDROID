@@ -1,12 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id "androidx.navigation.safeargs.kotlin"
+    id 'com.google.devtools.ksp'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.dagger.hilt.android'
 }
 
-Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
-def naverClientId = properties.getProperty('naver_client_id')
+//Properties properties = new Properties()
+//properties.load(project.rootProject.file('local.properties').newDataInputStream())
+//def naverClientId = properties.getProperty('naver_client_id')
 
 android {
     namespace 'com.spoons.popparazzi'
@@ -73,4 +75,12 @@ dependencies {
 
     // 네이버 지도 SDK
     implementation libs.map.sdk
+
+    // hilt
+    implementation libs.hilt.android
+    ksp libs.hilt.compiler
+
+    // room
+    implementation libs.androidx.room.ktx
+    ksp libs.androidx.room.compiler
 }

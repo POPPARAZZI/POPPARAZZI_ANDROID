@@ -10,7 +10,9 @@ import com.spoons.popparazzi.feature.home.HomeFragment
 import com.spoons.popparazzi.feature.meet.MeetListFragment
 import com.spoons.popparazzi.feature.mypage.MyPageFragment
 import com.spoons.popparazzi.feature.search.SearchFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainFragment: BaseViewBindingFragment<FragmentMainBinding>(FragmentMainBinding::inflate) {
     private val viewModel: MainViewModel by viewModels()
     private val fragmentMap = mutableMapOf<BottomTabLayout.TabType, Fragment>()

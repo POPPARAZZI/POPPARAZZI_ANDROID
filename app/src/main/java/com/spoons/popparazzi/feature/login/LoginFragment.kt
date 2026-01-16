@@ -5,7 +5,9 @@ import androidx.navigation.fragment.findNavController
 import com.spoons.popparazzi.NavAppDirections
 import com.spoons.popparazzi.core.ui.base.fragment.BaseBindFragment
 import com.spoons.popparazzi.databinding.FragmentLoginBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class LoginFragment: BaseBindFragment<FragmentLoginBinding>(FragmentLoginBinding::inflate) {
     private val viewModel: LoginViewModel by viewModels()
 

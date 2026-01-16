@@ -5,7 +5,9 @@ import androidx.navigation.fragment.findNavController
 import com.spoons.popparazzi.NavAppDirections
 import com.spoons.popparazzi.core.ui.base.fragment.BaseBindFragment
 import com.spoons.popparazzi.databinding.FragmentOnboardingBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class OnboardingFragment: BaseBindFragment<FragmentOnboardingBinding>(FragmentOnboardingBinding::inflate) {
     private val viewModel: OnboardingViewModel by viewModels()
     private val adapter: OnboardingAdapter by lazy { OnboardingAdapter(viewModel.pageList) }

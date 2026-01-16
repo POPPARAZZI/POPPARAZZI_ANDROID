@@ -3,7 +3,9 @@ package com.spoons.popparazzi.core
 import android.app.Application
 import com.naver.maps.map.NaverMapSdk
 import com.spoons.popparazzi.BuildConfig
+import dagger.hilt.android.HiltAndroidApp
 
+@HiltAndroidApp
 class App: Application() {
 
     override fun onCreate() {
