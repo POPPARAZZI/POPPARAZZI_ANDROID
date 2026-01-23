@@ -12,5 +12,5 @@ class UserRepositoryImpl @Inject constructor(
     private val api: UserApi,
     private val dao: UserDao
 ): UserRepository {
-    override suspend fun getUser(): User = api.getUser().toEntity().toDomain()
+    override suspend fun getUser(): User? = dao.select()?.toDomain()
 }

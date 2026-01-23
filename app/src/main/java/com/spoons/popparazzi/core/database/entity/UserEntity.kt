@@ -4,6 +4,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "user")
+// User Realm Model
 data class UserEntity(
     @PrimaryKey
     val id: String,
